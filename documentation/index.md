@@ -19,7 +19,7 @@ emoji.createTextField
 emoji.createTextArea
 
 ## Usage
-
+```ruby
 emoji.createLabel({
 		top: 2*factor,
 		left: 10*factor,
@@ -30,8 +30,10 @@ emoji.createLabel({
 		font: {fontSize: 14*factor},
 		backgroundColor: "red"
 })
+```
 
 if you want to pass html to label, try:
+```ruby
 emoji.createLabel({
 		top: 2*factor,
 		left: 10*factor,
@@ -60,12 +62,4 @@ emoji.createTextArea({
 		height: 60*factor,
 		font: {fontSize: 14*factor}
 });
-
-## Author
-
-TODO: Enter your author name, email and other contact
-details you want to share here.
-
-## License
-
-TODO: Enter your license/legal information here.
+```
