@@ -46,8 +46,9 @@ emoji.createLabel({
 		font: {fontSize: 14*factor},
 		backgroundColor: "red"
 })
-```ruby
 ```
+
+```ruby
 emoji.createTextField({
 		value: "😳text field font 20",
 		top: 2*factor,
