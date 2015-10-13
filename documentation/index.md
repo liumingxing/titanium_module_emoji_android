@@ -2,7 +2,7 @@
 
 ## Description
 
-TODO: Enter your module description here
+This Module wrappers Emoji icons for Titanium Android platform.
 
 ## Accessing the emoji Module
 
@@ -14,20 +14,52 @@ The emoji variable is a reference to the Module object.
 
 ## Reference
 
-TODO: If your module has an API, you should document
-the reference here.
-
-### emoji.function
-
-TODO: This is an example of a module function.
-
-### emoji.property
-
-TODO: This is an example of a module property.
+emoji.createLabel
+emoji.createTextField
+emoji.createTextArea
 
 ## Usage
 
-TODO: Enter your usage example here
+emoji.createLabel({
+		top: 2*factor,
+		left: 10*factor,
+		right: 10*factor,
+		height: Ti.UI.SIZE,
+		text: "😁font 10",
+		color: "blue",
+		font: {fontSize: 14*factor},
+		backgroundColor: "red"
+})
+
+if you want to pass html to label, try:
+emoji.createLabel({
+		top: 2*factor,
+		left: 10*factor,
+		right: 10*factor,
+		height: Ti.UI.SIZE,
+		html: "😁from web html, font 20 <a href='http://twitter.com'>twitter</a>",
+		color: "blue",
+		font: {fontSize: 14*factor},
+		backgroundColor: "red"
+})
+
+emoji.createTextField({
+		value: "😳text field font 20",
+		top: 2*factor,
+		left: 10*factor,
+		right: 10*factor,
+		height: Ti.UI.SIZE,
+		font: {fontSize: 20*factor}
+});
+	
+emoji.createTextArea({
+		value: "😁text area font 14",
+		top: 2*factor,
+		left: 10*factor,
+		right: 10*factor,
+		height: 60*factor,
+		font: {fontSize: 14*factor}
+});
 
 ## Author
 
